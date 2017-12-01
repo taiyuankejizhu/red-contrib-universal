@@ -1,0 +1,20 @@
+{
+  "name": "red-contrib-universal-board-voltage",
+  "version": "1.0.0",
+  "description": "Voltage sample module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Voltage",
+    "sample"
+  ],
+  "node-red": {
+    "nodes": {
+      "universal-board-scheduler": "universal-board-voltage.js"
+    }
+  },
+  "author": "taiyuankejizhu@163.com",
+  "license": "ISC"
+}

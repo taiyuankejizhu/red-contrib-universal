@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('universal-board-scheduler',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+			onlinepin: {value:"P8_11", required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"universal-board-scheduler";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="universal-board-scheduler">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-onlinepin"><i class="icon-tag"></i> Online pin </label>
+        <input type="text" id="node-input-onlinepin">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="universal-board-scheduler">
+    <p> Schedule the test step </p>
+</script>

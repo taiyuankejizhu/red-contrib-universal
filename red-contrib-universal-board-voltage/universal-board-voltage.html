@@ -1,0 +1,46 @@
+<script type="text/javascript">
+    RED.nodes.registerType('universal-board-voltage',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+			voltpin: {value:"P9_36", required:true},
+			maxvolt: {value:3.2, required:true},
+			minvolt: {value:3.4, required:true},
+			topic: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"universal-board-voltage";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="universal-board-voltage">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-voltpin"><i class="icon-tag"></i> Voltage pin </label>
+        <input type="text" id="node-input-voltpin">
+    </div>
+    <div class="form-row">
+        <label for="node-input-maxvolt"><i class="icon-tag"></i> Max voltage </label>
+        <input type="text" id="node-input-maxvolt">
+    </div>
+    <div class="form-row">
+        <label for="node-input-minvolt"><i class="icon-tag"></i> Min voltage </label>
+        <input type="text" id="node-input-minvolt">
+    </div>
+    <div class="form-row">
+        <label for="node-input-topic"><i class="icon-tag"></i> Topic </label>
+        <input type="text" id="node-input-topic">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="universal-board-voltage">
+    <p> Voltage must within limit range </p>
+</script>

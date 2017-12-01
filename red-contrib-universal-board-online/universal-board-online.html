@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('universal-board-online',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+			onlinepin: {value:"P8_11", required:true},
+			topic: {value:"online"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"universal-board-online";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="universal-board-online">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-onlinepin"><i class="icon-tag"></i> Online pin </label>
+        <input type="text" id="node-input-onlinepin">
+    </div>
+    <div class="form-row">
+        <label for="node-input-topic"><i class="icon-tag"></i> Topic </label>
+        <input type="text" id="node-input-topic">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="universal-board-online">
+    <p> Scanning moudle is online </p>
+</script>

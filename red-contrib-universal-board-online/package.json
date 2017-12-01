@@ -1,0 +1,21 @@
+{
+  "name": "red-contrib-universal-board-online",
+  "version": "1.0.0",
+  "description": "Scann is moudle online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "universal",
+    "board",
+    "online"
+  ],
+  "node-red": {
+    "nodes": {
+      "universal-board-online": "universal-board-online.js"
+    }
+  },
+  "author": "taiyuankejizhu@163.com",
+  "license": "ISC"
+}

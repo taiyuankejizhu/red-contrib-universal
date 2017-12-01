@@ -1,0 +1,19 @@
+{
+  "name": "red-contrib-universal-board-scheduler",
+  "version": "1.0.0",
+  "description": "Schedule the test step",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "schedule"
+  ],
+  "node-red": {
+    "nodes": {
+      "universal-board-scheduler": "universal-board-scheduler.js"
+    }
+  },
+  "author": "taiyuankejizhu@163.com",
+  "license": "ISC"
+}
