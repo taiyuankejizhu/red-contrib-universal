@@ -1,0 +1,1 @@
+cmd_Release/obj.target/dlt645.node := g++ -shared -pthread -rdynamic  -Wl,-soname=dlt645.node -o Release/obj.target/dlt645.node -Wl,--start-group Release/obj.target/dlt645/dlt645_07.o Release/obj.target/dlt645/dlt645_api_07.o -Wl,--end-group 

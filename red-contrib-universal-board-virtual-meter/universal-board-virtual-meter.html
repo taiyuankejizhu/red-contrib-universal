@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('universal-board-virtual-meter',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            serial: {value:"/dev/ttyS1", required:true},
+			meter: {value:"000000000001", required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"universal-board-virtual-meter";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="universal-board-virtual-meter">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-serial"><i class="icon-tag"></i> Serial port </label>
+        <input type="text" id="node-input-serial">
+    </div>
+    <div class="form-row">
+        <label for="node-input-meter"><i class="icon-tag"></i> Meter address </label>
+        <input type="text" id="node-input-meter">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="universal-board-virtual-meter">
+    <p>A simple node that work like a power meter</p>
+</script>

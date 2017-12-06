@@ -41,8 +41,9 @@ module.exports = function(RED) {
         
         function Ticker() {
             if (node.progress < 10) {
-                /* node.volt = bone.analogRead(node.voltpin); */
-                node.volt = node.progress;
+                node.volt = bone.analogRead(node.voltpin) * 1.8;
+                node.volt = node.volt.toFixed(2)
+                /* node.volt = node.progress; */
                 node.progress++;
             } else {
                 node.progress = 10;

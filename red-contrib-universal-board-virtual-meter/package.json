@@ -1,18 +1,18 @@
 {
-  "name": "red-contrib-universal-board-voltage",
+  "name": "red-contrib-universal-board-virtual-meter",
   "version": "1.0.0",
-  "description": "Voltage sample module",
+  "description": "Virtual meter",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Voltage",
-    "sample"
+    "Virtual",
+    "meter"
   ],
   "node-red": {
     "nodes": {
-      "universal-board-voltage": "universal-board-voltage.js"
+      "universal-board-virtual-meter": "universal-board-virtual-meter.js"
     }
   },
   "author": "taiyuankejizhu@163.com",
