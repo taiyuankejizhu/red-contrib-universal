@@ -1,0 +1,1 @@
+cmd_Release/obj.target/opencv_featrue.node := g++ -shared -pthread -rdynamic -L/usr/share/lib  -Wl,-soname=opencv_featrue.node -o Release/obj.target/opencv_featrue.node -Wl,--start-group Release/obj.target/opencv_featrue/opencv_featrue.o -Wl,--end-group -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_ml

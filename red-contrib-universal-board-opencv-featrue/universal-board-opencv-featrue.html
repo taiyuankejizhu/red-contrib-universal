@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('universal-board-opencv-featrue',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+			topic: {value:"camera"}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"universal-board-opencv-featrue";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="universal-board-opencv-featrue">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-topic"><i class="icon-tag"></i> Topic </label>
+        <input type="text" id="node-input-topic">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="universal-board-opencv-featrue">
+    <p> Featrue detect use opencv </p>
+</script>

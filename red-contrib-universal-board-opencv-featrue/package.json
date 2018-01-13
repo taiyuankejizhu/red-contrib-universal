@@ -1,0 +1,20 @@
+{
+  "name": "red-contrib-universal-board-opencv-featrue",
+  "version": "1.0.0",
+  "description": "Opencv featrue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Opencv",
+    "featrue"
+  ],
+  "node-red": {
+    "nodes": {
+      "universal-board-opencv-featrue": "universal-board-opencv-featrue.js"
+    }
+  },
+  "author": "taiyuankejizhu@163.com",
+  "license": "ISC"
+}
